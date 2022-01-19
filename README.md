@@ -1,5 +1,5 @@
 # pyz-charts-demo
-
+![image](src/assets/cc.JPG)
 ## Project setup
 ```
 npm install
