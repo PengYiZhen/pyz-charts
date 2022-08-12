@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "pyz-charts": "^1.1.0",
+    "echarts-for-vue": "^1.4.1",
+    "pyz-charts": "^1.1.5",
     "vue": "^2.6.11"
   },
   "devDependencies": {
@@ -19,6 +20,7 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "vue-for-echarts": "0.0.1",
     "vue-template-compiler": "^2.6.11"
   },
   "description": "## Project setup ``` npm install ```",
