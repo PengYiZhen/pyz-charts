@@ -5,12 +5,13 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "pco": "pyz-charts"
   },
   "dependencies": {
     "core-js": "^3.6.5",
     "echarts-for-vue": "^1.4.1",
-    "pyz-charts": "^1.1.5",
+    "pyz-charts": "^1.2.3",
     "vue": "^2.6.11"
   },
   "devDependencies": {

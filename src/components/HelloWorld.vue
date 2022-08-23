@@ -11,21 +11,25 @@
        :option="mapOption.option" 
        :json-map="jsonMap" />
     </div>
+    <div style="height: 500px; width: 100%;">
+      <pyz-bar :pyz-charts-data="pyzChartsDatas"/> 
+    </div>
   </div>
 </template>
 
 <script>
 import DemoOption from '@/script/DemoOption'
 import MapOption from "../script/MapOption";
+import PyzBar from './PyzBar.vue';
 export default {
   name: 'HelloWorld',
-  props: {
-    msg: String
-  },
+  props: ['msg'],
+  components: { PyzBar },
   data(){
     return {
       h: 0,
       options: [],
+      pyzChartsDatas: {targets: [1,2,3,4,5,6,7], keys: [1,2,3,4,5,6,7], values: [1,2,3,4,5,6,7], legendTitle: ['Pyz', 'Charts']},
       mapOption: new MapOption({
         value: [
           {"我": 3000},
@@ -289,6 +293,15 @@ export default {
           value: item, // 动态传参
         }))
       });
+      setInterval(()=>{
+        this.pyzChartsDatas.values = new Array(parseInt(Math.random()*10),
+         parseInt(Math.random()*10), 
+         parseInt(Math.random()*10), 
+         parseInt(Math.random()*10), 
+         parseInt(Math.random()*10), 
+         parseInt(Math.random()*10), 
+         parseInt(Math.random()*10))
+      },2000)
     }
   }
 }
