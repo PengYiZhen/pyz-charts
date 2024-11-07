@@ -11,7 +11,7 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "echarts-for-vue": "^1.4.1",
-    "pyz-charts": "^1.2.3",
+    "pyz-charts": "^1.2.9",
     "vue": "^2.6.11"
   },
   "devDependencies": {
